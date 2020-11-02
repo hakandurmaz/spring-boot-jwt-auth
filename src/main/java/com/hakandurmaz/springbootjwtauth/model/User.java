@@ -1,5 +1,6 @@
 package com.hakandurmaz.springbootjwtauth.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import java.util.Collection;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -13,7 +14,9 @@ public class User implements UserDetails {
 
   @Id
   String id;
+  @ApiModelProperty(required = true)
   String username;
+  @ApiModelProperty(required = true)
   String password;
 
   @Override
