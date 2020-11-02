@@ -23,3 +23,5 @@ Test with Swagger2
 
 > [http://localhost:8081/swagger-ui.html#/](http://localhost:8081/swagger-ui.html#/)
 
+Create a new user with /signup and /login with your credentials, and it will returns the jwt token for you.
+Test that jwt token with /hello endpoint by sending it in "Authorization" header.
